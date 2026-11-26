@@ -36,7 +36,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@google/genai": "^2.31.0",
+    "@google/genai": "^3.6.1",
     "@google/generative-ai": "^0.24.1",
     "compression": "^1.8.2",
     "cors": "^2.8.6",

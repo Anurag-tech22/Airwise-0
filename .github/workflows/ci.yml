@@ -25,7 +25,7 @@ jobs:
         run: npm audit --omit=dev --audit-level=high
       - name: Check for leaked secrets
         run: |
-          if grep -rn 'AIza\|AQ\.\|sk-\|ghp_\|gho_\|AKIA' --include='*.ts' --include='*.tsx' --include='*.js' --include='*.json' --include='*.env*' --exclude-dir=node_modules --exclude-dir=dist . | grep -v 'node_modules\|\.test\.' | grep -v '# ' | grep -v 'your-'; then
+          if git grep -nE 'AIza[0-9A-Za-z_-]{10,}|AQ\.[A-Za-z0-9_-]{20,}|sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{20,}|gho_[A-Za-z0-9]{20,}|AKIA[A-Z0-9]{16}'; then
             echo "::error::Possible secret or API key found in source files!"
             exit 1
           fi

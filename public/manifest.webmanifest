@@ -1,0 +1,9 @@
+{
+  "name": "AirWise — family air quality assistant",
+  "short_name": "AirWise",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f8fb",
+  "theme_color": "#0a6b8a",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

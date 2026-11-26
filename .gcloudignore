@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-server
+coverage
+.git
+.github
+.env
+.env.*
+*.zip
+playwright-report
+test-results
+e2e
+docs
+
+reports
+.stryker-tmp
